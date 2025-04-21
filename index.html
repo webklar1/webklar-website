@@ -7,12 +7,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Poppins:wght@600&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
-    h1, h2 {
-      font-family: 'Poppins', sans-serif;
-    }
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2 { font-family: 'Poppins', sans-serif; }
     .glass {
       background: rgba(255, 255, 255, 0.6);
       backdrop-filter: blur(10px);
@@ -45,6 +41,36 @@
   </script>
 </head>
 <body class="bg-gradient-to-b from-white via-gray-100 to-gray-200 text-gray-900">
-<!-- Inhalt wird automatisch im weiteren Verlauf durch canvas ersetzt -->
+  <header class="text-center py-10 bg-white shadow-sm">
+    <div class="logo-glow-wrapper">
+      <img src="https://i.ibb.co/5gchb5RV/Chat-GPT-Image-21-Apr-2025-10-47-17.png" alt="Webklar Logo" class="mx-auto mb-2 w-72">
+    </div>
+    <h1 class="text-4xl font-bold text-gray-900 animate-fade-in">Webseiten, die Eindruck machen.</h1>
+    <p class="text-lg text-gray-500 italic mt-1 animate-fade-in">Schnell. Klar. Online.</p>
+  </header>
+  <main class="max-w-6xl mx-auto px-6 pt-10 pb-16 space-y-24">
+    <!-- Leistungen -->
+    <!-- Ablauf -->
+    <!-- Kontaktformular -->
+  </main>
+  <footer class="text-center py-8 text-sm text-gray-600">
+    <button onclick="togglePopup('impressum')" class="hover:underline mx-2">Impressum</button>
+    <button onclick="togglePopup('datenschutz')" class="hover:underline mx-2">Datenschutz</button>
+    <p class="mt-2">&copy; 2025 Webklar</p>
+  </footer>
+  <div id="impressum" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+    <div class="bg-white p-6 rounded shadow max-w-md">
+      <h2 class="text-xl font-bold mb-4">Impressum</h2>
+      <p>Max Mustermann<br>Webklar<br>Musterstraße 1<br>12345 Musterstadt<br>Deutschland<br><br>E-Mail: info-webklar@gmx.de</p>
+      <button onclick="togglePopup('impressum')" class="mt-6 text-blue-600 hover:underline">Schließen</button>
+    </div>
+  </div>
+  <div id="datenschutz" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+    <div class="bg-white p-6 rounded shadow max-w-md">
+      <h2 class="text-xl font-bold mb-4">Datenschutz</h2>
+      <p>Wir nehmen Datenschutz ernst. Es werden keine persönlichen Daten ohne Zustimmung gespeichert oder weitergegeben. Diese Seite verwendet keine Cookies.</p>
+      <button onclick="togglePopup('datenschutz')" class="mt-6 text-blue-600 hover:underline">Schließen</button>
+    </div>
+  </div>
 </body>
 </html>
